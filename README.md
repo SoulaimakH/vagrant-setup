@@ -21,7 +21,20 @@ Before running Vagrant, ensure that the following are installed:
 It is recommended to run `vagrant up` directly from Windows, rather than from WSL, to avoid potential conflicts.
 
 **Example:**  
+
 ![Shared Folder Error Fix](https://github.com/user-attachments/assets/6b0dbee7-ac6c-4a3c-8cb8-a85127ba676d)
+
+![image](https://github.com/user-attachments/assets/7cee292f-7a30-4d8a-a8b4-e9b7cbaf7f21)
+
+###  Enabling Windows Access in WSL
+
+To ensure proper file access between Windows and WSL, add the following environment variable:
+
+```bash
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+```
+
+
 
 ## Common Issues and Solutions
 
@@ -65,13 +78,7 @@ To fix this, either:
 
 
 
-### 2. Enabling Windows Access in WSL
 
-To ensure proper file access between Windows and WSL, add the following environment variable:
-
-```bash
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
-```
 
 
 
